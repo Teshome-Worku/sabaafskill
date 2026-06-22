@@ -14,18 +14,22 @@ export function HeroSection() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image & Lighting */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/images/hero/heroimage.jpg"
           alt="Sabaaf Skill Academy Graduation"
           fill
           priority
-          className="object-cover object-center"
+          className="object-cover object-center scale-105 animate-[pulse_20s_ease-in-out_infinite]"
           quality={100}
         />
-        <div className="absolute inset-0 bg-black/70 mix-blend-multiply" />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-transparent to-background" />
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
+        
+        {/* Animated Premium Glows */}
+        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] -z-10 animate-[pulse_8s_ease-in-out_infinite]" />
+        <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-blue-500/10 rounded-full blur-[100px] -z-10 animate-[pulse_10s_ease-in-out_infinite_delay-2s]" />
       </div>
 
       {/* Content */}
