@@ -85,7 +85,7 @@ export function Navbar() {
           <LanguageSwitcher />
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="text-foreground p-1 focus:outline-none"
+            className="text-foreground p-3 -mr-2 focus:outline-none flex items-center justify-center min-h-[44px] min-w-[44px]"
             aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           >
             {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}

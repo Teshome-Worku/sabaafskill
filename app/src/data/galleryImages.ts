@@ -20,4 +20,11 @@ export const galleryImages: GalleryImage[] = [
   { src: '/images/graduation/photo_1_2026-06-22_10-42-44.jpg', alt: 'Graduation moment', category: 'graduation' },
   { src: '/images/graduation/photo_2_2026-06-22_10-42-44.jpg', alt: 'Graduation moment', category: 'graduation' },
   { src: '/images/graduation/photo_3_2026-06-22_10-42-44.jpg', alt: 'Graduation moment', category: 'graduation' },
+  // Testimonials
+  { src: '/images/testimonials/estifanos.jpg', alt: 'Estifanos Abera', category: 'testimonial' },
+  { src: '/images/testimonials/fenet.jpg', alt: 'Fenet Daselegn', category: 'testimonial' },
+  { src: '/images/testimonials/burka.jpg', alt: 'Burka D', category: 'testimonial' },
+  { src: '/images/testimonials/solen.jpg', alt: 'Solen Memberu', category: 'testimonial' },
+  { src: '/images/testimonials/eba.jpg', alt: 'Eba Seyoum', category: 'testimonial' },
+  { src: '/images/testimonials/abdi.jpg', alt: 'Abdi', category: 'testimonial' },
 ];

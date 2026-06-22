@@ -16,16 +16,16 @@ export const content: Record<Language, ContentStrings> = {
     },
     coursesSection: {
       title: 'Ogummoota Nuti Barsiisnu',
-      button: 'Bal\'inaan Ilaali',
+      button: "Bal'inaan Ilaali",
     },
     studentSuccess: {
       title: 'Barattoonni Keenya Maal Jedhu?',
-      subtitle: 'Jechi keenya qofa osoo hin taane, barattoonni keenya isaanii dubbatu.',
+      subtitle: 'Jechi keenya qofa osoo hin taane, barattoonni keenya ofii isaanii dubbatu.',
     },
     graduationShowcase: {
-      title: 'Milkaa\'ina Barattoota Keenya',
+      title: "Milkaa'ina Barattoota Keenya",
       subtitle: 'Barattoonni keenya ogummaa isaanii xumuruun eebbifamanii gara hojii fi hojii dhuunfaatti ce\'aa jiru.',
-      button: 'Suuraalee Eebbifamaa Ilaali',
+      button: 'Suuraalee Eebbaa Ilaali',
     },
     founder: {
       title: 'Ergaa Hundeessaa',

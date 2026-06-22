@@ -25,15 +25,15 @@ export function SectionHeader({
       )}
       {...props}
     >
-      <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground tracking-tight">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-white tracking-tight leading-tight">
         {title}
       </h2>
       {subtitle && (
-        <p className="text-lg text-muted-foreground max-w-[800px] mt-2">
+        <p className="text-lg md:text-xl text-muted-foreground max-w-[800px] mt-3">
           {subtitle}
         </p>
       )}
-      <div className="h-1 w-20 bg-primary mt-4 rounded-full" />
+      <div className="h-1.5 w-24 bg-gradient-to-r from-primary to-primary/20 mt-6 rounded-full shadow-[0_0_10px_rgba(26,107,240,0.5)]" />
     </div>
   )
 }

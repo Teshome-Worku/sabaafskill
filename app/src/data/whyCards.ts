@@ -9,7 +9,7 @@ export const whyCards: WhyCardType[] = [
       en: 'Learn In Your Language',
     },
     description: {
-      om: "Barnoonni Afaan Oromoo keessatti waan kennamuuf salphaatti hubachuu fi hojii irra oolchuun ni danda'ama.",
+      om: "Barnoonni Afaan Oromootin waan kennamuuf salphaatti hubachuu fi hojii irra oolchuun ni danda'ama.",
       en: 'Classes are taught in Afaan Oromo, making it easier to understand and apply practically.',
     },
     image: '/images/classroom/photo_5_2026-06-22_11-11-37.jpg'
