@@ -30,8 +30,9 @@ export function Navbar() {
 
   const navLinks = [
     { name: { om: 'Garaa', en: 'Home' }, href: '/' },
-    { name: { om: 'Waa\'ee', en: 'About' }, href: '/about' },
+    { name: { om: "Waa'ee", en: 'About' }, href: '/about' },
     { name: { om: 'Barnoota', en: 'Courses' }, href: '/courses' },
+    { name: { om: 'Milkaa\'inaa', en: 'Testimonials' }, href: '/testimonials' },
     { name: { om: 'Suuraalee', en: 'Gallery' }, href: '/gallery' },
     { name: { om: 'Quunnamtii', en: 'Contact' }, href: '/contact' },
   ];

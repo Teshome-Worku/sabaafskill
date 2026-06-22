@@ -42,11 +42,14 @@ export function GraduationSection() {
           <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent" />
           
           <div className="absolute bottom-0 left-0 w-full p-8 md:p-12">
+            <div className="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm border border-primary/30 rounded-full px-4 py-1.5 text-sm text-primary font-medium mb-3">
+              {language === 'om' ? '✦ Marsaa 3ffaa' : '✦ 3rd Graduation Batch'}
+            </div>
             <h3 className="text-3xl md:text-5xl font-heading font-bold text-white tracking-tight mb-2">
-              Your Skill, Your Future
+              {language === 'om' ? 'Ogummaa Kee, Futura Kee' : 'Your Skill, Your Future'}
             </h3>
-            <p className="text-white/80 max-w-xl">
-              {language === 'om' ? 'Eebba barattoota keenya marsaa 3ffaa.' : 'Celebrating our 3rd batch graduation.'}
+            <p className="text-white/70 max-w-xl text-lg">
+              {language === 'om' ? 'Eebba barattoota keenya marsaa 3ffaa.' : 'Celebrating our 3rd batch of digital creators.'}
             </p>
           </div>
         </div>

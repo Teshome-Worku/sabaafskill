@@ -4,6 +4,7 @@ import "./globals.css";
 import { LanguageProvider } from "@/hooks/useLanguage";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { StickyContactButton } from "@/components/ui/StickyContactButton";
 
 // Fonts
 const outfit = Outfit({ 
@@ -125,6 +126,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+          <StickyContactButton />
         </LanguageProvider>
       </body>
     </html>
