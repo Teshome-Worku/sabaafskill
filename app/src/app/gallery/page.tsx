@@ -1,36 +1,13 @@
-"use client";
+import { Metadata } from 'next';
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { SectionHeader } from '@/components/ui/SectionHeader';
-import { GalleryGrid } from '@/components/ui/GalleryGrid';
-import { useLanguage } from '@/hooks/useLanguage';
-import { galleryImages } from '@/data/galleryImages';
+export const metadata: Metadata = {
+  title: 'Gallery',
+  description: 'Browse photos from Sabaaf Skill Academy — graduation ceremonies, classroom sessions, and student activities in Nekemte, Oromia.',
+  openGraph: {
+    title: 'Student Gallery — Sabaaf Skill',
+    description: 'Graduation ceremonies, classrooms, and activities at Sabaaf Skill Digital Creative Academy.',
+    images: [{ url: '/images/graduation/photo_1_2026-06-22_10-41-33.jpg', width: 1200, height: 630, alt: 'Sabaaf Skill Graduation Gallery' }],
+  },
+};
 
-export default function GalleryPage() {
-  const { language } = useLanguage();
-
-  return (
-    <div className="pt-24 pb-20 bg-background min-h-screen">
-      <div className="container mx-auto px-4 md:px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <SectionHeader 
-            title={language === 'om' ? 'Suuraalee' : 'Gallery'}
-            subtitle={
-              language === 'om' 
-                ? 'Sochii fi milkaa\'ina barattoota keenyaa daawwadhaa.' 
-                : 'Explore the activities and successes of our students.'
-            }
-            className="mb-12 mt-10"
-          />
-        </motion.div>
-        
-        <GalleryGrid images={galleryImages} />
-      </div>
-    </div>
-  );
-}
+export { default } from './_page';
