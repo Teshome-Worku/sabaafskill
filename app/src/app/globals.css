@@ -4,49 +4,50 @@
 
 @layer base {
   :root {
-    --background: 224 53% 7%; /* #080D1A */
-    --foreground: 0 0% 100%; /* #FFFFFF */
-
-    --card: 221 49% 10%; /* #0D1526 */
-    --card-foreground: 0 0% 100%; /* #FFFFFF */
-
-    --popover: 221 49% 10%; /* #0D1526 */
-    --popover-foreground: 0 0% 100%; /* #FFFFFF */
-
-    --primary: 217 89% 52%; /* #1A6BF0 Electric Blue */
-    --primary-foreground: 0 0% 100%; /* #FFFFFF */
-
+    --background: 224 53% 7%;
+    --foreground: 0 0% 100%;
+    --card: 221 49% 10%;
+    --card-foreground: 0 0% 100%;
+    --popover: 221 49% 10%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 217 89% 52%;
+    --primary-foreground: 0 0% 100%;
     --secondary: 215 28% 17%;
     --secondary-foreground: 0 0% 100%;
-
     --muted: 215 28% 17%;
-    --muted-foreground: 214 20% 69%; /* #A0AEC0 */
-
+    --muted-foreground: 214 20% 69%;
     --accent: 217 89% 52%;
     --accent-foreground: 0 0% 100%;
-
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-
     --border: 215 28% 17%;
     --input: 215 28% 17%;
     --ring: 217 89% 52%;
-
-    --radius: 0.75rem; /* 12px */
+    --radius: 0.75rem;
   }
 }
 
 @layer base {
   * {
     @apply border-border;
+    box-sizing: border-box;
   }
   body {
-    @apply bg-background text-foreground antialiased selection:bg-primary/30 selection:text-white;
+    @apply bg-background text-foreground antialiased;
+  }
+  ::selection {
+    @apply bg-primary/30 text-white;
   }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+  .font-heading {
+    font-family: var(--font-heading), system-ui, sans-serif;
+  }
+  .font-body {
+    font-family: var(--font-body), system-ui, sans-serif;
   }
 }
