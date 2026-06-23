@@ -93,9 +93,8 @@ export function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Navigation Menu */}
         <div 
-          className={`fixed inset-0 bg-background/95 backdrop-blur-xl z-0 transition-transform duration-300 flex flex-col pt-24 px-6 md:hidden ${
+          className={`fixed inset-0 bg-background z-40 transition-transform duration-300 flex flex-col pt-24 px-6 md:hidden ${
             mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
