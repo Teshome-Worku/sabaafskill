@@ -1,5 +1,5 @@
-import { Language, ContentStrings } from '@/types/content';
-
+import { Language } from '@/types';
+import { ContentStrings } from '@/types/content';
 export const content: Record<Language, ContentStrings> = {
   om: {
     hero: {

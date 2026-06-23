@@ -45,7 +45,9 @@ export function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
             <h4 className="font-heading font-bold text-white text-lg tracking-tight leading-none">
               {testimonial.name}
             </h4>
-            <BadgeCheck className="w-4 h-4 text-primary shrink-0" title="Verified Graduate" />
+            <span title="Verified Graduate" className="flex items-center justify-center">
+              <BadgeCheck className="w-4 h-4 text-primary shrink-0" />
+            </span>
           </div>
           
           <div className="flex flex-col gap-0.5">
