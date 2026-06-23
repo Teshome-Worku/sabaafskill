@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { MessageCircle } from 'lucide-react';
+import { Phone } from 'lucide-react';
 import { useLanguage } from '@/hooks/useLanguage';
 
 export function StickyContactButton() {
@@ -30,9 +30,12 @@ export function StickyContactButton() {
       <a
         href="tel:0919574214"
         aria-label="Call us"
-        className="group flex items-center gap-3 bg-primary hover:bg-primary/90 text-white rounded-full p-3.5 shadow-[0_4px_20px_rgba(26,107,240,0.5)] hover:shadow-[0_4px_30px_rgba(26,107,240,0.7)] transition-all duration-300"
+        className="group flex items-center gap-3 bg-primary hover:bg-primary/90 text-white rounded-full px-4 py-3 shadow-[0_4px_20px_rgba(26,107,240,0.5)] hover:shadow-[0_4px_30px_rgba(26,107,240,0.7)] transition-all duration-300"
       >
-        <MessageCircle className="w-6 h-6 shrink-0" />
+        <span className="text-sm font-semibold hidden group-hover:block max-w-0 group-hover:max-w-xs overflow-hidden whitespace-nowrap transition-all duration-300">
+          {language === 'om' ? 'Nuuf Bilbilaa' : 'Call Us'}
+        </span>
+        <Phone className="w-6 h-6 shrink-0" />
       </a>
     </div>
   );
