@@ -40,14 +40,14 @@ export function ClassroomSection() {
           </div>
           
           {/* Photo Mosaic */}
-          <div className="lg:w-7/12 grid grid-cols-2 gap-4 relative">
+          <div className="w-full lg:w-7/12 grid grid-cols-2 gap-3 md:gap-4 relative mt-8 lg:mt-0">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-primary/20 blur-[100px] rounded-full z-0 pointer-events-none" />
             
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="space-y-4 z-10 pt-10"
+              viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+              className="space-y-3 md:space-y-4 z-10 pt-6 md:pt-10"
             >
               <div className="relative rounded-2xl overflow-hidden aspect-[4/5] shadow-2xl border border-white/10">
                 <Image src="/images/classroom/photo_1_2026-06-22_11-11-37.jpg" alt="Classroom" fill className="object-cover hover:scale-105 transition-transform duration-700" />
@@ -60,9 +60,9 @@ export function ClassroomSection() {
             <motion.div 
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: true, margin: "0px 0px -100px 0px" }}
               transition={{ delay: 0.2 }}
-              className="space-y-4 z-10"
+              className="space-y-3 md:space-y-4 z-10"
             >
               <div className="relative rounded-2xl overflow-hidden aspect-square shadow-2xl border border-white/10">
                 <Image src="/images/classroom/photo_2_2026-06-22_11-11-37.jpg" alt="Student practice" fill className="object-cover hover:scale-105 transition-transform duration-700" />

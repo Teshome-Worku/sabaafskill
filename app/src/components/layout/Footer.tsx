@@ -21,10 +21,10 @@ export function Footer() {
   return (
     <footer className="bg-card text-card-foreground border-t border-white/5 pt-16 pb-8">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12 text-center md:text-left">
           
           {/* Brand Col */}
-          <div className="space-y-4">
+          <div className="space-y-4 flex flex-col items-center md:items-start">
             <Link href="/" className="flex items-center gap-3">
               <div className="relative w-10 h-10 overflow-hidden rounded-md">
                 <Image 
@@ -47,7 +47,7 @@ export function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <h3 className="font-heading font-bold text-lg mb-4">{t({ om: "Kallattii", en: "Quick Links" })}</h3>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li><Link href="/" className="hover:text-primary transition-colors">{t({ om: "Garaa", en: "Home" })}</Link></li>
@@ -59,14 +59,14 @@ export function Footer() {
           </div>
 
           {/* Contact Col */}
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <h3 className="font-heading font-bold text-lg mb-4">{t({ om: "Quunnamtii", en: "Contact Us" })}</h3>
             <ul className="space-y-4 text-sm text-muted-foreground">
-              <li className="flex items-start gap-3">
+              <li className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <span>Nekemte, Oromiyaa<br />Around Museum First Circle</span>
               </li>
-              <li className="flex items-center gap-3">
+              <li className="flex items-center justify-center md:justify-start gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
                 <a href="tel:0919574214" className="hover:text-primary transition-colors">0919 57 42 14</a>
               </li>
@@ -74,9 +74,9 @@ export function Footer() {
           </div>
 
           {/* Social Col */}
-          <div>
+          <div className="flex flex-col items-center md:items-start">
             <h3 className="font-heading font-bold text-lg mb-4">{t({ om: "Hordofaa", en: "Follow Us" })}</h3>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center justify-center md:justify-start gap-4">
               <a href="https://t.me/Sabaafnekemte" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-muted-foreground" aria-label="Telegram">
                 <TelegramIcon className="w-5 h-5" />
               </a>
@@ -93,9 +93,9 @@ export function Footer() {
           
         </div>
 
-        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
+        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground text-center md:text-left">
           <p>{content[language].footer.copyright} {currentYear}. {t({ om: "Mirgi hunduu seeraan eegamaadha.", en: "All rights reserved." })}</p>
-          <div className="flex gap-4">
+          <div className="flex gap-4 justify-center">
             <Link href="/admin" className="hover:text-primary transition-colors">Admin Dashboard</Link>
           </div>
         </div>
