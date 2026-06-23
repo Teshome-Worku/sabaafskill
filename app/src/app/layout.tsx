@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import { Outfit, Inter } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/hooks/useLanguage";
-import { Navbar } from "@/components/layout/Navbar";
-import { Footer } from "@/components/layout/Footer";
-import { StickyContactButton } from "@/components/ui/StickyContactButton";
+import { RootLayoutWrapper } from "@/components/layout/RootLayoutWrapper";
 
 // Fonts
 const outfit = Outfit({ 
@@ -121,12 +119,9 @@ export default function RootLayout({
         className={`${outfit.variable} ${inter.variable} font-body bg-background text-foreground antialiased min-h-screen flex flex-col`}
       >
         <LanguageProvider>
-          <Navbar />
-          <main className="flex-1">
+          <RootLayoutWrapper>
             {children}
-          </main>
-          <Footer />
-          <StickyContactButton />
+          </RootLayoutWrapper>
         </LanguageProvider>
       </body>
     </html>

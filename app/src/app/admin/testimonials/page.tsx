@@ -1,0 +1,1 @@
+export default function Page() { return <div className="animate-in fade-in flex items-center justify-center min-h-[50vh]"><h1 className="text-2xl text-white/50 font-medium">Testimonials Management (Coming Soon)</h1></div>; }
