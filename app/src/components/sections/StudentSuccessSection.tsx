@@ -11,11 +11,20 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 
+import { useAnimationControls } from 'framer-motion';
+
 export function StudentSuccessSection() {
   const { language } = useLanguage();
+  const controls = useAnimationControls();
   
   // Duplicate array for seamless infinite marquee scroll
   const marqueeTestimonials = [...testimonials, ...testimonials];
+
+  const pause = () => controls.stop();
+  const resume = () => controls.start({
+    x: [null, "-50%"],
+    transition: { duration: 40, ease: "linear", repeat: Infinity },
+  });
   
   return (
     <section className="py-16 md:py-24 bg-background overflow-hidden">
@@ -27,18 +36,21 @@ export function StudentSuccessSection() {
       </div>
         
       {/* Infinite Marquee Container */}
-      <div className="relative flex overflow-hidden group">
+      <div
+        className="relative flex overflow-hidden group"
+        onMouseEnter={pause}
+        onMouseLeave={resume}
+        onTouchStart={pause}
+        onTouchEnd={resume}
+      >
         {/* Left/Right Edge Masks for smooth fade out */}
         <div className="absolute left-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-12 md:w-32 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
         
         <motion.div
-          animate={{ x: ["0%", "-50%"] }}
-          transition={{
-            duration: 40,
-            ease: "linear",
-            repeat: Infinity,
-          }}
+          animate={controls}
+          initial={{ x: "0%" }}
+          onViewportEnter={() => resume()}
           className="flex gap-6 w-max px-4"
         >
           {marqueeTestimonials.map((testimonial, idx) => (
