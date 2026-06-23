@@ -32,8 +32,8 @@ export function HeroSection() {
           className="object-cover object-center scale-105"
           quality={95}
         />
-        <div className="absolute inset-0 bg-black/65" />
-        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/70 to-transparent" />
+        <div className="absolute inset-0 bg-black/40 md:bg-black/65" />
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 md:via-background/70 to-transparent" />
 
         {/* Animated Premium Glows */}
         <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-primary/15 rounded-full blur-[150px] pointer-events-none animate-pulse" />
