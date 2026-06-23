@@ -40,9 +40,10 @@ export function WhyCard({ card, index }: WhyCardProps) {
           alt={t(card.title)}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-cover transition-transform duration-700 group-hover:scale-110"
+          className="object-cover transition-transform duration-700 group-hover:scale-110 brightness-75 md:brightness-50 group-hover:brightness-75"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-card via-card/90 to-card/40 group-hover:via-card/80 transition-all duration-500" />
+        {/* Mobile: lighter overlay so image shows through. Desktop hover: darkens for text readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent md:via-card/80 group-hover:via-card/70 transition-all duration-500" />
       </div>
       
       <div className="relative z-10 p-8 h-full flex flex-col justify-end min-h-[300px]">
@@ -50,11 +51,11 @@ export function WhyCard({ card, index }: WhyCardProps) {
           {getIcon(card.icon)}
         </div>
         
-        <h3 className="text-2xl font-heading font-bold text-white mb-3 group-hover:text-primary transition-colors">
+        <h3 className="text-2xl font-heading font-bold text-white mb-3 group-hover:text-primary transition-colors drop-shadow-lg">
           {t(card.title)}
         </h3>
         
-        <p className="text-white/70 leading-relaxed group-hover:text-white/90 transition-colors">
+        <p className="text-white/80 leading-relaxed group-hover:text-white/90 transition-colors drop-shadow-md">
           {t(card.description)}
         </p>
       </div>

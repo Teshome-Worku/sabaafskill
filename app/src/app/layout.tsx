@@ -28,6 +28,13 @@ export const metadata: Metadata = {
   authors: [{ name: "Iso Tiya" }, { name: "Sabaaf Skill Team" }],
   creator: "Sabaaf Skill",
   publisher: "Sabaaf Skill",
+  icons: {
+    icon: [
+      { url: '/images/logo/sabaafskilllogo.jpg', type: 'image/jpeg' },
+    ],
+    apple: '/images/logo/sabaafskilllogo.jpg',
+    shortcut: '/images/logo/sabaafskilllogo.jpg',
+  },
   formatDetection: {
     email: false,
     address: false,
