@@ -40,7 +40,11 @@ export function Navbar() {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background/90 backdrop-blur-md border-b border-white/5 py-3' : 'bg-transparent py-5'
+        mobileMenuOpen 
+          ? 'bottom-0 bg-[#0B1120] py-5' 
+          : isScrolled 
+            ? 'bg-background/90 backdrop-blur-md border-b border-white/5 py-3' 
+            : 'bg-transparent py-5'
       }`}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
@@ -82,11 +86,11 @@ export function Navbar() {
         </nav>
 
         {/* Mobile Menu Toggle */}
-        <div className="flex items-center gap-4 md:hidden relative z-10">
+        <div className="flex items-center gap-4 md:hidden relative z-50">
           <LanguageSwitcher />
           <button 
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="text-foreground p-3 -mr-2 focus:outline-none flex items-center justify-center min-h-[44px] min-w-[44px]"
+            className="text-white p-3 -mr-2 focus:outline-none flex items-center justify-center min-h-[44px] min-w-[44px]"
             aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
           >
             {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -94,7 +98,7 @@ export function Navbar() {
         </div>
 
         <div 
-          className={`fixed inset-0 bg-background z-40 transition-transform duration-300 flex flex-col pt-24 px-6 md:hidden ${
+          className={`fixed inset-0 bg-[#0B1120] z-40 transition-transform duration-300 flex flex-col pt-24 px-6 md:hidden ${
             mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
