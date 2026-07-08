@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Sabaaf Skill favicon">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#245b96" />
+      <stop offset="100%" stop-color="#143a68" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="url(#bg)" />
+  <path d="M39 7L22 30H34L19 57L43 28H31L45 7Z" fill="#ffffff" />
+  <g fill="none" stroke="#1f4d80" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M27 15H21" />
+    <path d="M26 21H19" />
+    <path d="M25 27H18" />
+    <path d="M24 33H17" />
+    <path d="M28 39H21" />
+  </g>
+  <g fill="#1f4d80">
+    <circle cx="28" cy="15" r="2.1" />
+    <circle cx="27" cy="21" r="2.1" />
+    <circle cx="26" cy="27" r="2.1" />
+    <circle cx="25" cy="33" r="2.1" />
+    <circle cx="29" cy="39" r="2.1" />
+  </g>
+</svg>

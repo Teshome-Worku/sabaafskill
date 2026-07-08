@@ -5,13 +5,13 @@ import { LanguageProvider } from "@/hooks/useLanguage";
 import { RootLayoutWrapper } from "@/components/layout/RootLayoutWrapper";
 
 // Fonts
-const outfit = Outfit({ 
+const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-heading",
   display: "swap",
 });
 
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap",
@@ -29,11 +29,9 @@ export const metadata: Metadata = {
   creator: "Sabaaf Skill",
   publisher: "Sabaaf Skill",
   icons: {
-    icon: [
-      { url: '/images/logo/sabaafskilllogo.jpg', type: 'image/jpeg' },
-    ],
-    apple: '/images/logo/sabaafskilllogo.jpg',
-    shortcut: '/images/logo/sabaafskilllogo.jpg',
+    icon: '/icon.svg',
+    apple: '/icon.svg',
+    shortcut: '/icon.svg',
   },
   formatDetection: {
     email: false,

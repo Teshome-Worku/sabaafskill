@@ -60,7 +60,7 @@ export function Footer() {
 
           {/* Contact Col */}
           <div className="flex flex-col items-center md:items-start">
-            <h3 className="font-heading font-bold text-lg mb-4">{t({ om: "Quunnamtii", en: "Contact Us" })}</h3>
+            <h3 className="font-heading font-bold text-lg mb-4">{t({ om: "Nu Quunnamaa", en: "Contact Us" })}</h3>
             <ul className="space-y-4 text-sm text-muted-foreground">
               <li className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -75,7 +75,7 @@ export function Footer() {
 
           {/* Social Col */}
           <div className="flex flex-col items-center md:items-start">
-            <h3 className="font-heading font-bold text-lg mb-4">{t({ om: "Hordofaa", en: "Follow Us" })}</h3>
+            <h3 className="font-heading font-bold text-lg mb-4">{t({ om: "Nu Hordofaa", en: "Follow Us" })}</h3>
             <div className="flex items-center justify-center md:justify-start gap-4">
               <a href="https://t.me/Sabaafnekemte" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-secondary flex items-center justify-center hover:bg-primary hover:text-white transition-colors text-muted-foreground" aria-label="Telegram">
                 <TelegramIcon className="w-5 h-5" />
