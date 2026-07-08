@@ -48,7 +48,7 @@ export function Footer() {
 
           {/* Quick Links */}
           <div className="flex flex-col items-center md:items-start">
-            <h3 className="font-heading font-bold text-lg mb-4">{t({ om: "Kallattii", en: "Quick Links" })}</h3>
+            <h3 className="font-heading font-bold text-lg mb-4">{t({ om: "Liinkii Saffisaa", en: "Quick Links" })}</h3>
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li><Link href="/" className="hover:text-primary transition-colors">{t({ om: "Garaa", en: "Home" })}</Link></li>
               <li><Link href="/about" className="hover:text-primary transition-colors">{t({ om: "Waa'ee Keenya", en: "About Us" })}</Link></li>
